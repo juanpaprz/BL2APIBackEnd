@@ -7,17 +7,17 @@ import { WeaponTypeModule } from './Modules/weapon-type.module';
 
 @Module({
   imports: [
+    WeaponTypeModule,
     TypeOrmModule.forRoot({
       type: 'mssql',
-      host: '/cloudsql/bl2-api-db:us-central1:bl2-api-database',
-      port: 3000,
-      username: 'juanHost',
-      password: 'host_bl2',
-      database: 'bl2-api',
+      host: '/cloudsql/bl2-api:us-central1:bl2-api-sql',
+      port: 3306,
+      username: 'sqlserver',
+      password: 'bl2_host',
+      database: 'bl2-api-db',
       entities: [WeaponType],
       synchronize: true,
     }),
-    WeaponTypeModule,
   ],
   controllers: [AppController],
   providers: [AppService],
