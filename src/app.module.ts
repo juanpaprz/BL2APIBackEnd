@@ -10,7 +10,7 @@ import { WeaponTypeModule } from './Modules/weapon-type.module';
     TypeOrmModule.forRoot({
       type: 'mssql',
       host: '/cloudsql/bl2-api-db:us-central1:bl2-api-database',
-      port: 5432,
+      port: 3000,
       username: 'juanHost',
       password: 'host_bl2',
       database: 'bl2-api',
