@@ -9,11 +9,7 @@ import { WeaponTypeModule } from './Modules/weapon-type.module';
   imports: [
     WeaponTypeModule,
     TypeOrmModule.forRoot({
-      type: 'mssql',
-      host: '/cloudsql/bl2-api:us-central1:bl2-api-sql',
-      port: 5432,
-      username: 'sqlserver',
-      password: 'bl2_host',
+      type: 'sqlite',
       database: 'bl2-api-db',
       entities: [WeaponType],
       synchronize: true,

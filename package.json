@@ -21,6 +21,7 @@
     "deploy": "gcloud app deploy"
   },
   "dependencies": {
+    "@google-cloud/spanner": "^6.11.0",
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.5",
     "@nestjs/cqrs": "^9.0.4",
@@ -31,6 +32,7 @@
     "pg": "^8.11.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.5.5",
+    "sqlite3": "^5.1.6",
     "typeorm": "^0.3.16"
   },
   "devDependencies": {
