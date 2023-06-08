@@ -10,7 +10,7 @@ import { WeaponTypeModule } from './Modules/weapon-type.module';
     WeaponTypeModule,
     TypeOrmModule.forRoot({
       type: 'sqlite',
-      database: './data/bl2-api-db.sqlite',
+      database: 'bl2-api-db',
       entities: [WeaponType],
       synchronize: true,
     }),
